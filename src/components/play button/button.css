@@ -5,4 +5,8 @@
   background: #016b6b;
   border: none;
   padding: 10px 20px;
+  background: linear-gradient(#ED8770, #D9519D);
+}
+img {
+  padding-right: 10px;
 }
