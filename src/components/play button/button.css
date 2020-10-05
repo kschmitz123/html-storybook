@@ -4,13 +4,11 @@
   color: white;
   border: none;
   height: 23px;
-  width: 75px;
-  padding: 8px 30px;
+  padding: 5px 20px;
   background: linear-gradient(#ed8770, #d9519d);
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
-img {
-  padding-right: 10px;
+.btn > img {
+  margin-right: 10px;
 }
