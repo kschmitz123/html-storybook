@@ -8,11 +8,14 @@
 
 html {
   font-size: 16px;
+  background-color: #383B49;
+  color: #FFFFFF;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
+  
 }
 
 input,
