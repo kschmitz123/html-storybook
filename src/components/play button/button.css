@@ -6,11 +6,10 @@
   height: 23px;
   width: 75px;
   padding: 8px 30px;
-  background: linear-gradient(#ED8770, #D9519D);
+  background: linear-gradient(#ed8770, #d9519d);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 img {
   padding-right: 10px;
