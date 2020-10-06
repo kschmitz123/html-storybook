@@ -1,4 +1,4 @@
-.btn {
+.btn-color {
   border-radius: 20px;
   font-size: 8px;
   color: white;
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
 }
-.btn > img {
+.btn-color > img {
   margin-right: 10px;
 }
 
