@@ -1,0 +1,34 @@
+.menuItem {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 18rem;
+  background-color: #10121d;
+  padding: 1.5rem 0.3rem 1.7rem 1rem;
+}
+
+.menuText {
+  position: relative;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.menuItem > *:first-child {
+  margin-right: 1rem;
+}
+
+/* nach Alexis Lösung für Linie: */
+.menuText:after {
+  content: "";
+  background-color: #99979720;
+  width: 100%;
+  height: 0.01rem;
+  position: absolute;
+  bottom: -1.7rem;
+  left: 0px;
+}
+
+ul .menuItem:last-child {
+  padding-bottom: 5rem;
+}
