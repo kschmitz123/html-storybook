@@ -1,5 +1,5 @@
 li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   list-style: none;
 }
 li::before {
@@ -12,4 +12,16 @@ li.ringtone::before {
 }
 li.themes::before {
   content: url("../../assets/001-paint.svg");
+}
+li.drivemode::before {
+  content: url("../../assets/13-car.svg");
+}
+li.hidden::before {
+  content: url("../../assets/006-folder.svg");
+}
+li.equaliser::before {
+  content: url("../../assets//004-sound-bars.svg");
+}
+li.sleep::before {
+  content: url("../../assets/003-stopwatch.svg");
 }
