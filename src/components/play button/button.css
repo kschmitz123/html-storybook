@@ -1,6 +1,6 @@
-.btn-color {
+.btn-primary {
   border-radius: 20px;
-  font-size: 8px;
+  font-size: 0.5rem;
   color: white;
   border: none;
   padding: 5px 20px;
@@ -8,10 +8,6 @@
   display: flex;
   align-items: center;
 }
-.btn-color > img {
+.btn-primary > :first-child {
   margin-right: 10px;
 }
-
-/* btn > :first-child {
-  margin-right: 10px; 
-  und dann den Text in einen span setzen */
