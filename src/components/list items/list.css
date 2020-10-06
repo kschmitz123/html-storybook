@@ -1,0 +1,15 @@
+li {
+  font-size: 1rem;
+  list-style: none;
+}
+li::before {
+  position: relative;
+  vertical-align: middle;
+  padding-right: 1rem;
+}
+li.ringtone::before {
+  content: url("../../assets/002-scissors.svg");
+}
+li.themes::before {
+  content: url("../../assets/001-paint.svg");
+}
