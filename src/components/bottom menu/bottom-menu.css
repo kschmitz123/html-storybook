@@ -1,6 +1,8 @@
 .bottomnav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
   position: fixed;
   bottom: 0;
   max-width: 22rem;
@@ -13,5 +15,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   font-size: 0.5rem;
-  width: 100%;
+}
+
+.active {
+  color: #d9519d;
+}
+
+.inactive {
+  color: #63666e;
 }
