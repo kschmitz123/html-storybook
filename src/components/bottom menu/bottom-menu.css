@@ -5,6 +5,7 @@
   right: 0;
   position: fixed;
   bottom: 0;
+  margin: auto;
   max-width: 22rem;
   background-color: #151827;
   box-shadow: 0 -0.2rem 4px #00000040;
