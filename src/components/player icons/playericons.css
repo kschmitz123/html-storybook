@@ -1,4 +1,4 @@
-span {
+.playericons {
   display: flex;
   flex-direction: row;
 }
@@ -6,7 +6,7 @@ span {
 figure > :first-child {
   margin-bottom: 0.5rem;
 }
-figure {
+.playerelements {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
