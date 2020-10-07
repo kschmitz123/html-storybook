@@ -1,0 +1,15 @@
+span {
+  display: flex;
+  flex-direction: row;
+}
+
+figure > :first-child {
+  margin-bottom: 0.5rem;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  font-size: 0.5rem;
+}
