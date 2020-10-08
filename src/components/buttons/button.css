@@ -15,11 +15,11 @@
   margin-right: 10px;
 }
 
-.btn-primary {
+.btn--primary {
   border: none;
   background: linear-gradient(#ed8770, #d9519d);
 }
 
-.btn-rectangular {
+.btn--rectangular {
   border-radius: 2px;
 }
