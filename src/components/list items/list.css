@@ -28,6 +28,6 @@
   left: 0px;
 }
 
-ul .sidebar__item:last-child {
+.sidebar .sidebar__item:last-child {
   padding-bottom: 5rem;
 }
