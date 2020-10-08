@@ -1,0 +1,12 @@
+.album {
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.album-info {
+  display: flex;
+  justify-content: space-between;
+}
+.album-title {
+  font-weight: 500;
+}
