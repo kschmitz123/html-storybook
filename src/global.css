@@ -5,15 +5,20 @@
 *::before {
   box-sizing: border-box;
 }
+:root {
+  --main-color: #fff;
+  --main-bg-color: #181b2c;
+  --font-family: "Circular Std", sans-serif;
+}
 
 html {
   font-size: 16px;
-  background-color: #383b49;
-  color: #ffffff;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
 }
 
 body {
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
 }
 
@@ -23,6 +28,14 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Circular Std", sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
 }
