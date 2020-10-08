@@ -1,0 +1,17 @@
+.album {
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.album-info {
+  display: flex;
+  justify-content: space-between;
+  color: #c1c0c0;
+}
+.album-title {
+  font-weight: 500;
+  padding: 0.5rem 0;
+  color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
