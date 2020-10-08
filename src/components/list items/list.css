@@ -1,4 +1,4 @@
-.menuItem {
+.sidebar__item {
   list-style: none;
   display: flex;
   align-items: center;
@@ -8,18 +8,17 @@
   padding: 1.5rem 0.3rem 1.7rem 1rem;
 }
 
-.menuText {
+.sidebar__text {
   position: relative;
   font-size: 0.9rem;
   width: 100%;
 }
 
-.menuItem > *:first-child {
+.sidebar__item > *:first-child {
   margin-right: 1rem;
 }
 
-/* nach Alexis Lösung für Linie: */
-.menuText:after {
+.sidebar__text:after {
   content: "";
   background-color: #99979720;
   width: 100%;
@@ -29,6 +28,6 @@
   left: 0px;
 }
 
-ul .menuItem:last-child {
+ul .sidebar__item:last-child {
   padding-bottom: 5rem;
 }
