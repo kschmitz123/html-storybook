@@ -1,7 +1,6 @@
 .recent__item {
   list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   min-width: 18rem;
@@ -15,12 +14,14 @@
   font-size: 0.9rem;
   width: 100%;
 }
-
+.recent__artist {
+  font-size: 0.6rem;
+}
 .recent__item > *:first-child {
   margin-right: 1rem;
 }
 
-.recent__album:after {
+.recent__artist:after {
   content: "";
   background-color: #99979720;
   width: 100%;
