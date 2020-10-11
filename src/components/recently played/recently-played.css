@@ -1,0 +1,35 @@
+.recent__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 18rem;
+  background-color: #151827;
+  padding: 1.5rem 0.3rem 1.7rem 1rem;
+  color: #ffffff90;
+}
+
+.recent__title {
+  position: relative;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.recent__item > *:first-child {
+  margin-right: 1rem;
+}
+
+.recent__album:after {
+  content: "";
+  background-color: #99979720;
+  width: 100%;
+  height: 0.01rem;
+  position: absolute;
+  bottom: -1.7rem;
+  left: 0px;
+}
+
+.recent .recent__item:last-child {
+  padding-bottom: 5rem;
+}
