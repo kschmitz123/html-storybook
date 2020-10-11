@@ -4,8 +4,9 @@
   align-items: center;
   justify-content: flex-start;
   min-width: 18rem;
-  background-color: #10121d;
+  background-color: #151827;
   padding: 1.5rem 0.3rem 1.7rem 1rem;
+  color: #ffffff90;
 }
 
 .sidebar__text {

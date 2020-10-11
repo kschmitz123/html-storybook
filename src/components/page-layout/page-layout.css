@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0 0;
+  color: #ffffff80;
+}
+.sidebar {
+  padding-left: 0;
+}
