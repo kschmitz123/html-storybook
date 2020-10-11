@@ -1,36 +1,55 @@
-.recent {
+.recently-played {
+  background-color: #151827;
+}
+.recent__head {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.recent__head span:nth-child(2) {
+  font-size: 0.7rem;
+  color: #ed8770;
+}
+.recent {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
   margin: 0;
   padding: 0;
 }
+.playbutton {
+  padding-right: 1rem;
+}
 .recent__item {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+  column-gap: 0.6rem;
   list-style: none;
   min-width: 18rem;
-  background-color: #151827;
   padding: 1.5rem 0.3rem 1.7rem 0;
 }
-
 .recent__title {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  row-gap: 0.3rem;
   font-size: 0.9rem;
-  padding: 0.3rem 0;
   color: #ffffff90;
 }
 .recent__artist {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0.3rem;
+  justify-items: center;
+  align-items: center;
+}
+.recent__title p {
+  margin: 0;
   font-size: 0.7rem;
   color: #ffffff30;
 }
-.recent__artist p {
-  margin: 0;
-}
-/* .recent__item > *:first-child {
-  margin-right: 1rem;
-} */
 
+/* funktioniert nicht: */
 .recent__artist:after {
   content: "";
   background-color: #99979720;
@@ -39,8 +58,4 @@
   position: absolute;
   bottom: -1.7rem;
   left: 0px;
-}
-
-.recent .recent__item:last-child {
-  padding-bottom: 5rem;
 }
