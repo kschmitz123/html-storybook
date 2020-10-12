@@ -15,9 +15,9 @@ import playBtnActive from "../../assets/playbutton-active.svg";
 </div>
 */
 
-export function createTrackElement() {
-  const title = "Billie Jean";
-  const artist = "Michael Jackson";
+export function createTrackElement(title, artist) {
+  //   const title = "Billie Jean";
+  //   const artist = "Michael Jackson";
 
   const trackElement = document.createElement("div"); // <div></div>
   trackElement.className = "track";
@@ -41,6 +41,9 @@ export function createTrackElement() {
   const playActionElement = document.createElement("img"); // <img>
   playActionElement.src = playBtnActive;
   btnElement.className = "playbutton";
+  btnElement.onclick = function () {
+    alert("Click");
+  };
 
   trackElement.append(trackImage, trackInfo, btnElement);
   btnElement.append(playActionElement);

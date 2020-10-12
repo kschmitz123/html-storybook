@@ -4,10 +4,7 @@
   align-items: center;
   column-gap: 30px;
 }
-.track__title,
-.track__artist {
-  margin: 0;
-}
+
 .playbutton {
   background-color: transparent;
   border: none;
@@ -15,8 +12,10 @@
 .track__title {
   font-size: 0.9rem;
   color: #ffffff70;
+  margin: 0;
 }
 .track__artist {
   font-size: 0.7rem;
   color: #ffffff40;
+  margin: 0;
 }
