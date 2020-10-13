@@ -24,14 +24,11 @@ export function createTrackElement(track) {
 
   const trackImage = document.createElement("img"); // <img>
   trackImage.className = "track__img";
-  trackImage.src = track.imgScr;
+  trackImage.src = track.imgSrc;
   trackImage.alt = "Image of " + track.artist;
 
   const trackInfo = document.createElement("div");
   trackInfo.className = "track__info";
-
-  // const trackInfo = document.createElement("div");
-  // trackInfo.className = "track__info";
 
   const trackTitle = document.createElement("h3"); // <h3></h3>
   trackTitle.innerText = track.title; // <h3>Billie Jean</h3>
@@ -45,8 +42,10 @@ export function createTrackElement(track) {
   const playActionElement = document.createElement("img"); // <img>
   playActionElement.src = playBtnActive;
   btnElement.className = "playbutton";
+
+  const audioElement = new Audio(track.audioSrc);
   btnElement.onclick = function () {
-    alert("Click");
+    audioElement.play();
   };
 
   trackElement.append(trackImage, trackInfo, btnElement);
