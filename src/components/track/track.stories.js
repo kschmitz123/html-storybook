@@ -10,14 +10,16 @@ export const BillieJean = () =>
     title: "Billie Jean",
     artist: "Michael Jackson",
     imgSrc:
-      "https://w7.pngwing.com/pngs/497/242/png-transparent-michael-jackson-the-experience-logo-bad-lyrics-song-others-text-logo-musician.png",
+      "https://i.pinimg.com/originals/2c/7d/99/2c7d99b45744abba70aea6be9127ea34.png",
+    audioSrc:
+      "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/The_Rainbows_End/TRG_Banks_-_09_-_Back_on_the_road.mp3",
   });
 export const EarthSong = () =>
   createTrackElement({
     title: "Earth Song",
     artist: "Michael Jackson",
     imgSrc:
-      "https://w7.pngwing.com/pngs/497/242/png-transparent-michael-jackson-the-experience-logo-bad-lyrics-song-others-text-logo-musician.png",
+      "https://i.pinimg.com/originals/2c/7d/99/2c7d99b45744abba70aea6be9127ea34.png",
     audioSrc:
       "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/The_Rainbows_End/TRG_Banks_-_03_-_Walking_on_water.mp3",
   });

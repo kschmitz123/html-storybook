@@ -1,5 +1,5 @@
 import "./track.css";
-import billieJean from "../../assets/billie-jean.png";
+// import billieJean from "../../assets/billie-jean.png";
 import playBtnActive from "../../assets/playbutton-active.svg";
 
 /*
@@ -22,6 +22,9 @@ export function createTrackElement(track) {
   const trackElement = document.createElement("div"); // <div></div>
   trackElement.className = "track";
 
+  const underline = document.createElement("div"); // <div></div>
+  underline.className = "underline";
+
   const trackImage = document.createElement("img"); // <img>
   trackImage.className = "track__img";
   trackImage.src = track.imgSrc;
@@ -41,14 +44,14 @@ export function createTrackElement(track) {
   const btnElement = document.createElement("button"); // <button>
   const playActionElement = document.createElement("img"); // <img>
   playActionElement.src = playBtnActive;
-  btnElement.className = "playbutton";
+  btnElement.className = "playButton";
 
   const audioElement = new Audio(track.audioSrc);
   btnElement.onclick = function () {
     audioElement.play();
   };
 
-  trackElement.append(trackImage, trackInfo, btnElement);
+  trackElement.append(trackImage, trackInfo, btnElement, underline);
   btnElement.append(playActionElement);
   trackInfo.append(trackTitle, trackArtist);
 

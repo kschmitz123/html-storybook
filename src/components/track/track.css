@@ -1,27 +1,34 @@
 .track {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto 16px;
   align-items: center;
   column-gap: 30px;
 }
 
-.playbutton {
+.playButton {
   background: transparent;
   border: none;
 }
 .track__title {
   font-size: 0.9rem;
-  color: #ffffff70;
+  color: #a3a4ab;
   margin: 0;
 }
 .track__artist {
   font-size: 0.7rem;
-  color: #ffffff40;
+  color: #727687;
   margin: 0;
 }
 .track__img {
   height: 46px;
   width: 46px;
   border-radius: 50%;
-  border: 1px solid #ffffff57;
+  border: 1px solid #ffffff30;
+}
+
+.underline {
+  grid-column: 2 / 4;
+  grid-row: 2 / 6;
+  border-bottom: solid 1px #ffffff30;
 }
