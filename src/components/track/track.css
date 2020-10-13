@@ -6,7 +6,7 @@
 }
 
 .playbutton {
-  background-color: transparent;
+  background: transparent;
   border: none;
 }
 .track__title {
@@ -18,4 +18,10 @@
   font-size: 0.7rem;
   color: #ffffff40;
   margin: 0;
+}
+.track__img {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 1px solid #ffffff57;
 }

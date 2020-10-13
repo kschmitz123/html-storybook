@@ -6,8 +6,23 @@ export default {
 };
 
 export const BillieJean = () =>
-  createTrackElement("Billie Jean", "Michael Jackson");
+  createTrackElement({
+    title: "Billie Jean",
+    artist: "Michael Jackson",
+    imgSrc:
+      "https://w7.pngwing.com/pngs/497/242/png-transparent-michael-jackson-the-experience-logo-bad-lyrics-song-others-text-logo-musician.png",
+  });
 export const EarthSong = () =>
-  createTrackElement("Earth Song", "Michael Jackson");
+  createTrackElement({
+    title: "Earth Song",
+    artist: "Michael Jackson",
+    imgScr:
+      "https://w7.pngwing.com/pngs/497/242/png-transparent-michael-jackson-the-experience-logo-bad-lyrics-song-others-text-logo-musician.png",
+  });
 export const SmoothCriminal = () =>
-  createTrackElement("Smooth criminal", "Michael Jackson");
+  createTrackElement({
+    title: "Smooth criminal",
+    artist: "Michael Jackson",
+    imgSrc:
+      "https://w7.pngwing.com/pngs/497/242/png-transparent-michael-jackson-the-experience-logo-bad-lyrics-song-others-text-logo-musician.png",
+  });
