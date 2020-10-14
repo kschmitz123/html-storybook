@@ -46,9 +46,6 @@ export function createTrackElement(track) {
   playActionElement.src = playBtnActive;
   btnElement.className = "playButton";
 
-  const pauseActionElement = document.createElement("img");
-  pauseActionElement.src = pauseBtnActive;
-
   const audioElement = new Audio(track.audioSrc);
   let isPlaying = false; // grundeinstellung für isPlaying
 
@@ -60,7 +57,7 @@ export function createTrackElement(track) {
       playActionElement.alt = "Play";
     } else {
       audioElement.play(); //wenn false bewirkt ein click Play
-      playActionElement.src = pauseActionElement.src;
+      playActionElement.src = pauseBtnActive;
       playActionElement.alt = "Pause";
     }
     isPlaying = !isPlaying; //setzt wert jeweils wieder auf false oder true
