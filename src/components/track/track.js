@@ -49,16 +49,23 @@ export function createTrackElement(track) {
   const audioElement = new Audio(track.audioSrc);
   let isPlaying = false; // grundeinstellung für isPlaying
 
-  btnElement.onclick = function () {
+  const showPlayButton = () => {
+    playActionElement.src = playBtnActive;
+    playActionElement.alt = "Play";
+  };
+  const showPauseButton = () => {
+    playActionElement.src = pauseBtnActive;
+    playActionElement.alt = "Pause";
+  };
+
+  btnElement.onclick = () => {
     if (isPlaying) {
       //short for isPlaying === true
       audioElement.pause(); // wenn true bewirkt ein click Pause
-      playActionElement.src = playBtnActive;
-      playActionElement.alt = "Play";
+      showPlayButton();
     } else {
       audioElement.play(); //wenn false bewirkt ein click Play
-      playActionElement.src = pauseBtnActive;
-      playActionElement.alt = "Pause";
+      showPauseButton();
     }
     isPlaying = !isPlaying; //setzt wert jeweils wieder auf false oder true
   };
