@@ -42,30 +42,22 @@ export function createTrackElement(track) {
   trackArtist.className = "track__artist";
 
   const btnElement = document.createElement("button"); // <button>
+  btnElement.className = "playButton";
+
   const playActionElement = document.createElement("img"); // <img>
   playActionElement.src = playBtnActive;
-  btnElement.className = "playButton";
 
   const audioElement = new Audio(track.audioSrc);
   let isPlaying = false; // grundeinstellung für isPlaying
-
-  const showPlayButton = () => {
-    playActionElement.src = playBtnActive;
-    playActionElement.alt = "Play";
-  };
-  const showPauseButton = () => {
-    playActionElement.src = pauseBtnActive;
-    playActionElement.alt = "Pause";
-  };
 
   btnElement.onclick = () => {
     if (isPlaying) {
       //short for isPlaying === true
       audioElement.pause(); // wenn true bewirkt ein click Pause
-      showPlayButton();
+      showPlayButton(playActionElement);
     } else {
       audioElement.play(); //wenn false bewirkt ein click Play
-      showPauseButton();
+      showPauseButton(playActionElement);
     }
     isPlaying = !isPlaying; //setzt wert jeweils wieder auf false oder true
   };
@@ -76,3 +68,12 @@ export function createTrackElement(track) {
 
   return trackElement;
 }
+
+const showPlayButton = (element) => {
+  element.src = playBtnActive;
+  element.alt = "Play";
+};
+const showPauseButton = (playActionElement) => {
+  playActionElement.src = pauseBtnActive;
+  playActionElement.alt = "Pause";
+};
