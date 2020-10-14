@@ -1,5 +1,6 @@
 import "./track.css";
 import playBtnActive from "../../assets/playbutton-active.svg";
+import pauseBtnActive from "../../assets/icon-pause-gradient.svg";
 
 /*
 <div class="track">
@@ -45,9 +46,24 @@ export function createTrackElement(track) {
   playActionElement.src = playBtnActive;
   btnElement.className = "playButton";
 
+  const pauseActionElement = document.createElement("img");
+  pauseActionElement.src = pauseBtnActive;
+
   const audioElement = new Audio(track.audioSrc);
+  let isPlaying = false; // grundeinstellung für isPlaying
+
   btnElement.onclick = function () {
-    audioElement.play();
+    if (isPlaying) {
+      //short for isPlaying === true
+      audioElement.pause(); // wenn true bewirkt ein click Pause
+      playActionElement.src = playBtnActive;
+      playActionElement.alt = "Play";
+    } else {
+      audioElement.play(); //wenn false bewirkt ein click Play
+      playActionElement.src = pauseActionElement.src;
+      playActionElement.alt = "Pause";
+    }
+    isPlaying = !isPlaying; //setzt wert jeweils wieder auf false oder true
   };
 
   trackElement.append(trackImage, trackInfo, btnElement, underline);
