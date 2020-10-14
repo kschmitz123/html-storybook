@@ -1,5 +1,4 @@
 import "./track.css";
-// import billieJean from "../../assets/billie-jean.png";
 import playBtnActive from "../../assets/playbutton-active.svg";
 
 /*

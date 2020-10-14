@@ -1,4 +1,5 @@
 import { createTrackElement } from "./track";
+import billieJean from "../../assets/billie-jean.png";
 
 export default {
   title: "Components/Track",
@@ -9,8 +10,7 @@ export const BillieJean = () =>
   createTrackElement({
     title: "Billie Jean",
     artist: "Michael Jackson",
-    imgSrc:
-      "https://i.pinimg.com/originals/2c/7d/99/2c7d99b45744abba70aea6be9127ea34.png",
+    imgSrc: billieJean,
     audioSrc:
       "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/ccCommunity/TRG_Banks/The_Rainbows_End/TRG_Banks_-_09_-_Back_on_the_road.mp3",
   });
