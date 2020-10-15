@@ -15,57 +15,52 @@ import { createElement } from "../../utils/elements";
     </div>
     */
 
-export function createTrackElement(track) {
-  const trackElement = createElement("span", {
+export const createTrackElement = (track) => {
+  const audioElement = new Audio(track.audioSrc);
+  const playActionElement = createElement("img", {
+    src: playBtnActive,
+  });
+  const trackElement = createElement("div", {
     className: "track",
-    innerText: "Hello Me",
+    children: [
+      createElement("img", {
+        className: "track__img",
+        src: track.imgSrc,
+        alt: "Image of " + track.artist,
+      }),
+      createElement("div", {
+        className: "track__info",
+        children: [
+          createElement("h3", {
+            className: "track__title",
+            innerText: track.title,
+          }),
+          createElement("p", {
+            className: "track__artist",
+            innerText: track.artist,
+          }),
+        ],
+      }),
+      createElement("button", {
+        className: "playButton",
+        children: [playActionElement],
+        onclick: () => {
+          if (!audioElement.paused) {
+            audioElement.pause();
+            setPlayIcon(playActionElement);
+          } else {
+            audioElement.play();
+            setPauseIcon(playActionElement);
+          }
+        },
+      }),
+    ],
   });
   return trackElement;
+};
 
-  // const trackElement = document.createElement("div"); // <div></div>
-  // trackElement.className = "track";
-
-  // const underline = document.createElement("div"); // <div></div>
-  // underline.className = "underline";
-
-  // const trackImage = document.createElement("img"); // <img>
-  // trackImage.className = "track__img";
-  // trackImage.src = track.imgSrc;
-  // trackImage.alt = "Image of " + track.artist;
-
-  // const trackInfo = document.createElement("div");
-  // trackInfo.className = "track__info";
-
-  // const trackTitle = document.createElement("h3"); // <h3></h3>
-  // trackTitle.innerText = track.title; // <h3>Billie Jean</h3>
-  // trackTitle.className = "track__title";
-
-  // const trackArtist = document.createElement("p"); // create <p>
-  // trackArtist.innerText = track.artist; // create <p>Michael Jackson<p>
-  // trackArtist.className = "track__artist";
-
-  // const btnElement = document.createElement("button"); // <button>
-  // btnElement.className = "playButton";
-
-  // const playActionElement = document.createElement("img"); // <img>
-  // playActionElement.src = playBtnActive;
-
-  // trackElement.append(trackImage, trackInfo, btnElement, underline);
-  // btnElement.append(playActionElement);
-  // trackInfo.append(trackTitle, trackArtist);
-
-  // const audioElement = new Audio(track.audioSrc);
-
-  // btnElement.onclick = () => {
-  //   if (!audioElement.paused) {
-  //     audioElement.pause(); // wenn true bewirkt ein click Pause
-  //     setPlayIcon(playActionElement);
-  //   } else {
-  //     audioElement.play(); //wenn false bewirkt ein click Play
-  //     setPauseIcon(playActionElement);
-  //   }
-  // };
-}
+// const underline = document.createElement("div"); // <div></div>
+// underline.className = "underline";
 
 const setPlayIcon = (element) => {
   element.src = playBtnActive;
