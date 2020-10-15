@@ -62,11 +62,11 @@ export const createTrackElement = (track) => {
 // const underline = document.createElement("div"); // <div></div>
 // underline.className = "underline";
 
-const setPlayIcon = (element) => {
+export const setPlayIcon = (element) => {
   element.src = playBtnActive;
   element.alt = "Play";
 };
-const setPauseIcon = (playActionElement) => {
+export const setPauseIcon = (playActionElement) => {
   playActionElement.src = pauseBtnActive;
   playActionElement.alt = "Pause";
 };
