@@ -47,31 +47,30 @@ export function createTrackElement(track) {
   const playActionElement = document.createElement("img"); // <img>
   playActionElement.src = playBtnActive;
 
-  const audioElement = new Audio(track.audioSrc);
-
-  btnElement.onclick = () => {
-    if (!audioElement.paused) {
-      //short for isPlaying === true
-      audioElement.pause(); // wenn true bewirkt ein click Pause
-      showPlayButton(playActionElement);
-    } else {
-      audioElement.play(); //wenn false bewirkt ein click Play
-      showPauseButton(playActionElement);
-    }
-  };
-
   trackElement.append(trackImage, trackInfo, btnElement, underline);
   btnElement.append(playActionElement);
   trackInfo.append(trackTitle, trackArtist);
 
+  const audioElement = new Audio(track.audioSrc);
+
+  btnElement.onclick = () => {
+    if (!audioElement.paused) {
+      audioElement.pause(); // wenn true bewirkt ein click Pause
+      setPlayIcon(playActionElement);
+    } else {
+      audioElement.play(); //wenn false bewirkt ein click Play
+      setPauseIcon(playActionElement);
+    }
+  };
+
   return trackElement;
 }
 
-const showPlayButton = (element) => {
+const setPlayIcon = (element) => {
   element.src = playBtnActive;
   element.alt = "Play";
 };
-const showPauseButton = (playActionElement) => {
+const setPauseIcon = (playActionElement) => {
   playActionElement.src = pauseBtnActive;
   playActionElement.alt = "Pause";
 };
